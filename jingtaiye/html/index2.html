@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/commen.css">
+</head>
+<body>
+
+<div id="pageone">
+    <div id="index_main" style="padding:20px;width:200px;height:200px">
+        <p style="margin-top: 30px!important;">哈哈哈哈哈哈</p>
+        <p>美丽的原啊~</p>
+        <p>您已爆炸！</p>
+        <p>砰 ！ 砰 ！ 砰 ！</p>
+    </div>
+    <div style="text-align: center">
+        <a href="order.html">
+            <p  class="con01" style="margin-top:220px!important;">
+            黑脸倒计时：<span class="timespan">9</span> 秒
+            </p>
+        </a>
+    </div>
+    <div id="index_footer" style="text-align: center">
+        <p>喜欢你</p>
+
+    </div>
+
+</div>
+
+<script src="../script/jquery.min.js"></script>
+<script src="../script/commen.js"></script>
+<script src="../script/api.js"></script>
+<script type="text/javascrip  9iit" src="../script/SHA1.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest.js"></script>
+<script type="text/javascript" src="../script/APICloud-rest-SHA1.js"></script>
+<script type="text/javascript" src="../script/apicloudjs/index2.js"></script>
+<script>
+    var t = 9;
+    var time = $('.timespan');
+    var con01 = $('.con01');
+
+    function fun() {
+        t--;
+        time.html(t);
+        if(t <= 0) {
+            clearInterval(inter);
+            con01.html("重新选择");
+        }
+    }
+    var inter = setInterval("fun()", 1000);
+
+</script>
+</body>
+</html>
+
+

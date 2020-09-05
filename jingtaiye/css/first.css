@@ -1,0 +1,6 @@
+*{margin:0;padding:0;}
+.whole>img{width:100%;position: relative}
+.whole form{position: absolute;top:30%;z-index:99;}
+
+
+
